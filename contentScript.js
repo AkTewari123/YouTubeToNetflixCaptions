@@ -15,7 +15,7 @@ chrome.runtime.onMessage.addListener((obj, sender, response) => {
       for (let i = 0; i < subtitles.length; i++) {
         subtitles[i].setAttribute(
           "style",
-          "background-color: rgba(255, 0, 0, 0) !important; font-weight:bold !important; font-size: 35px !important; text-shadow: 2px 2px 4px rgba(0, 0, 0, .9);"
+          "background-color: rgba(255, 0, 0, 0) !important; font-weight:bold !important; font-size: 35px !important; text-shadow: 2px 2px 4px rgba(0, 0, 0, .9); font-family: 'Outfit' !important;"
         );
       }
     }

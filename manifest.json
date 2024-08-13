@@ -2,7 +2,7 @@
   "name": "Netflix Captions",
   "version": "0.1.0",
   "description": "The captions kind of look like netflix captions",
-  "permissions": ["storage", "tabs", "activeTab"],
+  "permissions": ["storage", "tabs", "activeTab", "scripting"],
   "host_permissions": ["https://www.youtube.com/*"],
   "background": {
     "service_worker":  "background.js"
