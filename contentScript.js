@@ -4,12 +4,13 @@ chrome.runtime.onMessage.addListener((obj, sender, response) => {
   const isPressed = button.getAttribute("aria-pressed");
   if (isPressed) {
     function applyStyleToCaptions() {
-      const captionLine = document.getElementById("caption-window-1");
+      const captionLine = document.getElementsByClassName("ytp-caption-window-bottom")[0];
       if (captionLine) {
         captionLine.setAttribute(
           "style",
           "touch-action: none !important; background-color: rgba(255, 0, 0, 0) !important; bottom: 2% !important; left: 21.2% !important"
         );
+
       }
       const subtitles = document.getElementsByClassName("ytp-caption-segment");
       for (let i = 0; i < subtitles.length; i++) {
